@@ -48,6 +48,6 @@ macOS core and headless UI checks passed on Apple Silicon; packaging initially f
 
 This release is now classified as a public beta/prerelease. Existing v1.0.0 tag, download filenames and binaries are retained so existing links and hashes remain valid; this is a release-status change, not a rebuilt binary.
 
-Traffy reports testing with Mario Kart 8 Deluxe 3.0.5. This is the stated game test version, not a claim of exhaustive gameplay coverage. The parser validates structure rather than detecting the installed game version.
+I tested the editor with Mario Kart 8 Deluxe 3.0.5. This does not imply exhaustive gameplay coverage. The parser validates structure rather than detecting the installed game version.
 
 Run 43074902750 completed successfully for the portable desktop on macOS Intel, Apple Silicon, Linux x64 and Windows x64, including the applicable extracted-package checks. The original WPF Windows job still fails at WAV playback on the hosted runner. Earlier pending statements above are historical; this entry records the latest observed status. macOS is ad-hoc signed, not notarized. Interactive clean-machine and audible-output testing remains incomplete.

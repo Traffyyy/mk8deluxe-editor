@@ -1,6 +1,15 @@
 # User guide — public beta
 
-Tested game version: **Mario Kart 8 Deluxe 3.0.5**, as reported by Traffy. This does not certify every edit, item mapping or operating system. Other game versions are unverified. The parser checks the binary layout; it does not independently detect the game's version.
+> **Updated development builds:** the disk button and Ctrl/Command+S now save to the opened file. Ctrl/Command+Shift+S (or Save As in the portable actions menu) chooses a destination and asks before replacing an existing file. Each overwrite keeps a uniquely named `.bak` file beside the destination. External changes to the opened file are rejected: reopen it or save under a different name. The original Hex pane remains the snapshot from when you opened the file. Older 1.0.0 release downloads still use copy-only saving; the historical instructions below describe those downloads.
+
+
+I tested the editor with **Mario Kart 8 Deluxe 3.0.5**. This does not certify every edit, item mapping or operating system. Other game versions are unverified. The parser checks the binary layout; it does not independently detect the game's version.
+
+## Before opening the editor
+
+You must supply **`Performance.bin` extracted from the RomFS of Mario Kart 8 Deluxe**. Extract the RomFS for your intended game version separately, then locate **`Common/Mush/Performance.bin`** inside it. My tests used version **3.0.5**. Keep an untouched backup.
+
+The editor reads this extracted file; it does not extract RomFS or open a game ROM/container. No game files are included.
 
 ## First edit
 

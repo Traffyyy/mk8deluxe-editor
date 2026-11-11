@@ -47,7 +47,7 @@ public sealed class MainWindow : Window
         using (var iconStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("Mk8Editor.App.ico"))
             if (iconStream != null) Icon = new WindowIcon(iconStream);
         open = IconButton(Appearance.Open, "Open Performance.bin", OpenAsync);
-        save = IconButton(Appearance.Save, "Save a new copy", SaveAsync);
+        save = IconButton(Appearance.Save, "Save · Ctrl/⌘+S", SaveAsync);
         undo = IconButton(Appearance.Undo, "Undo · Ctrl/⌘+Z", () => { Undo(); return Task.CompletedTask; });
         reset = IconButton(Appearance.Reset, "Reset all changes", ResetAsync);
         theme = IconButton(Appearance.Moon, "Switch to dark theme", () => { ToggleTheme(); return Task.CompletedTask; });
@@ -92,7 +92,7 @@ public sealed class MainWindow : Window
         empty = new Border { Child = new StackPanel { Spacing = 12, HorizontalAlignment = HorizontalAlignment.Center,
             VerticalAlignment = VerticalAlignment.Center, MaxWidth = 500, Children = {
                 new TextBlock { Text = "Start with your file.", FontSize = 25, TextAlignment = TextAlignment.Center },
-                new TextBlock { Text = "Open Performance.bin to view images and statistics. Changes are saved to a new copy.", TextWrapping = TextWrapping.Wrap, TextAlignment = TextAlignment.Center }
+                new TextBlock { Text = "Open Performance.bin to view images and statistics. Save updates the opened file; Save As chooses a destination.", TextWrapping = TextWrapping.Wrap, TextAlignment = TextAlignment.Center }
             } } };
         workspace.Children.Add(Table); workspace.Children.Add(Hex); workspace.Children.Add(empty);
         workspace.Margin = new Thickness(24, 0, 24, 0);
@@ -154,7 +154,7 @@ public sealed class MainWindow : Window
         State.Load(path); search.Text = ""; State.Category = 0;
         RefreshTable(); Hex.Refresh();
         Title = "mk8deluxe editor · " + Path.GetFileName(path);
-        status.Text = Path.GetFileName(path) + " · original file protected";
+        status.Text = Path.GetFileName(path) + " · backup created when overwriting";
     }
     private async Task<bool> ConfirmDiscardAsync() => State.Session?.HasUnexportedChanges != true ||
         await EditorDialogs.Confirm(this, "Unsaved changes", "These changes have not been saved to a new copy. Discard them?", "Discard changes");
@@ -167,15 +167,24 @@ public sealed class MainWindow : Window
         string path = paths[0].TryGetLocalPath() ?? throw new InvalidOperationException("Choose a file stored on this computer.");
         await LoadPathAsync(path);
     }
-    public async Task SaveAsync()
+    public Task SaveAsync()
+    {
+        if (State.Session is { } session)
+        {
+            session.Save(); RefreshCommands();
+            status.Text = "Saved · " + session.SourcePath + " · Backup: " + session.LastBackupPath;
+        }
+        return Task.CompletedTask;
+    }
+    public async Task SaveAsAsync()
     {
         if (State.Session is not { } session) return;
-        var file = await StorageProvider.SaveFilePickerAsync(new FilePickerSaveOptions { Title = "Save a new copy", SuggestedFileName = "Performance.edited.bin",
+        var file = await StorageProvider.SaveFilePickerAsync(new FilePickerSaveOptions { Title = "Save As", SuggestedFileName = Path.GetFileName(session.SourcePath),
             DefaultExtension = "bin", ShowOverwritePrompt = true,
             FileTypeChoices = [new FilePickerFileType("Performance binary") { Patterns = ["*.bin"] }] });
         if (file == null) return;
         string path = file.TryGetLocalPath() ?? throw new InvalidOperationException("Choose a local destination.");
-        session.SaveCopy(path); status.Text = "Saved and verified · " + path; RefreshCommands();
+        session.SaveAs(path); status.Text = "Saved and verified · " + path; RefreshCommands();
     }
     public void ShowCategory(int category, bool clearSelection = true)
     {
@@ -213,7 +222,7 @@ public sealed class MainWindow : Window
     public void RefreshAfterEdit()
     {
         Table.RefreshValues(); Hex.Refresh(); RefreshCommands();
-        status.Text = $"{Path.GetFileName(State.Session?.SourcePath)} · {State.Session?.ChangedCount ?? 0} changed statistics · original file protected";
+        status.Text = $"{Path.GetFileName(State.Session?.SourcePath)} · {State.Session?.ChangedCount ?? 0} changed statistics · backup created when overwriting";
     }
     private void RefreshCommands()
     {
@@ -270,7 +279,7 @@ public sealed class MainWindow : Window
         return new ContextMenu { ItemsSource = new Control[] {
             Item("Copy all 14 statistics    Ctrl/⌘+C", CopyAsync),
             Item("Paste to selected items    Ctrl/⌘+V", PasteAsync),
-            new Separator(), Item("Edit selected statistics…    F2", EditAsync),
+            new Separator(), Item("Save As…    Ctrl/⌘+Shift+S", SaveAsAsync), Item("Edit selected statistics…    F2", EditAsync),
             Item("Show statistic in Hex    Ctrl/⌘+H", () => { JumpToHex(); return Task.CompletedTask; }) } };
     }
     private void OnKeyDown(object? sender, KeyEventArgs e)
@@ -281,7 +290,7 @@ public sealed class MainWindow : Window
         if (command)
         {
             if (e.Key == Key.O) Run(OpenAsync);
-            else if (e.Key == Key.S) Run(SaveAsync);
+            else if (e.Key == Key.S) Run(e.KeyModifiers.HasFlag(KeyModifiers.Shift) ? SaveAsAsync : SaveAsync);
             else if (e.Key == Key.F) { search.Focus(); search.SelectAll(); }
             else if (e.Key == Key.H) JumpToHex();
             else if (!typing && e.Key == Key.Z) Undo();

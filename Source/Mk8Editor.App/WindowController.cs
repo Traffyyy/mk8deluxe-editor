@@ -71,7 +71,7 @@ namespace Mk8Editor.App
                 UpdateStatus();
             };
             Find<Button>("OpenButton").Click += delegate { OpenFromDialog(); };
-            Find<Button>("SaveButton").Click += delegate { SaveFromDialog(); };
+            Find<Button>("SaveButton").Click += delegate { SaveCurrent(); };
             Find<Button>("UndoButton").Click += delegate { Undo(); };
             Find<Button>("ResetButton").Click += delegate { Reset(); };
             search.TextChanged += delegate { if (ready && CommitPendingEdit()) FilterRows(); };
@@ -145,17 +145,23 @@ namespace Mk8Editor.App
             try { LoadFile(picker.FileName); }
             catch (Exception error) { ShowError("Unable to open file", UserMessages.For(error)); }
         }
+        private bool SaveCurrent()
+        {
+            if (Session == null || !CommitPendingEdit()) return false;
+            try { Session.Save(); UpdateStatus(); Find<TextBlock>("StatusText").Text = "Saved: " + Session.SourcePath + " · Backup: " + Session.LastBackupPath; return true; }
+            catch (Exception error) { ShowError("Unable to save", UserMessages.For(error)); return false; }
+        }
         private bool SaveFromDialog()
         {
             if (Session == null || !CommitPendingEdit()) return false;
             var picker = new SaveFileDialog {
-                Title = "Save a new copy", Filter = "Binary file (*.bin)|*.bin", DefaultExt = ".bin", AddExtension = true,
-                FileName = "Performance_modified.bin", InitialDirectory = Path.GetDirectoryName(Session.SourcePath), OverwritePrompt = false
+                Title = "Save As", Filter = "Binary file (*.bin)|*.bin", DefaultExt = ".bin", AddExtension = true,
+                FileName = "Performance_modified.bin", InitialDirectory = Path.GetDirectoryName(Session.SourcePath), OverwritePrompt = true
             };
             if (picker.ShowDialog(Window) != true) return false;
             try
             {
-                Session.SaveCopy(picker.FileName); UpdateStatus();
+                Session.SaveAs(picker.FileName); UpdateStatus();
                 Find<TextBlock>("StatusText").Text = "Copy saved: " + picker.FileName;
                 return true;
             }
@@ -265,7 +271,7 @@ namespace Mk8Editor.App
             if (Session == null || !Session.HasUnexportedChanges) return true;
             var choice = EnglishDialog.Show(Window, "Some changes have not been saved to a copy. Would you like to save them?", "Unsaved changes", MessageBoxButton.YesNoCancel);
             if (choice == MessageBoxResult.Cancel) return false;
-            return choice == MessageBoxResult.No || SaveFromDialog();
+            return choice == MessageBoxResult.No || SaveCurrent();
         }
         private void OnClosing(object sender, CancelEventArgs args)
         {
@@ -283,6 +289,7 @@ namespace Mk8Editor.App
             if (Keyboard.Modifiers == ModifierKeys.Control && args.Key == Key.H && Grid.IsKeyboardFocusWithin)
             { ShowSelectedStatisticInHex(); args.Handled = true; return; }
             if (Keyboard.Modifiers == ModifierKeys.Control && args.Key == Key.O) { OpenFromDialog(); args.Handled = true; }
+            else if (Keyboard.Modifiers == ModifierKeys.Control && args.Key == Key.S) { SaveCurrent(); args.Handled = true; }
             else if (Keyboard.Modifiers == (ModifierKeys.Control | ModifierKeys.Shift) && args.Key == Key.S) { SaveFromDialog(); args.Handled = true; }
             else if (Keyboard.Modifiers == ModifierKeys.Control && args.Key == Key.Z && !(Keyboard.FocusedElement is TextBox)) { Undo(); args.Handled = true; }
         }

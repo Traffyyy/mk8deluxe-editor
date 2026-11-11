@@ -38,6 +38,24 @@ internal static class PortableTests
                 try { session.SaveCopy(link); } catch (IOException) { refused = true; }
                 Check(refused && File.ReadAllBytes(unicodeSource).SequenceEqual(File.ReadAllBytes(fixture)), "Symbolic-link destinations cannot overwrite the source");
             }
+            var editable = EditSession.Open(unicodeCopy);
+            var before = File.ReadAllBytes(unicodeCopy);
+            int offset = editable.File.Records[0].Offset;
+            editable.SetValue(offset, 123);
+            editable.Save();
+            Check(File.ReadAllBytes(unicodeCopy).SequenceEqual(editable.Serialize()), "Save overwrites the opened file");
+            Check(File.ReadAllBytes(editable.LastBackupPath).SequenceEqual(before), "Overwrite backup retains previous bytes");
+            Check(!editable.HasUnexportedChanges, "Save records clean checkpoint");
+            editable.Undo(); editable.Save();
+            Check(File.ReadAllBytes(unicodeCopy).SequenceEqual(before), "Undo and save restore previous data");
+            File.WriteAllBytes(unicodeCopy, new byte[] { 1, 2, 3 });
+            bool conflict = false;
+            try { editable.Save(); } catch (UserFileException) { conflict = true; }
+            Check(conflict && File.ReadAllBytes(unicodeCopy).Length == 3, "External changes are not overwritten");
+            string alternative = Path.Combine(temporary, "existing.bin");
+            File.WriteAllBytes(alternative, before);
+            editable.SaveAs(alternative);
+            Check(editable.SourcePath == alternative && File.ReadAllBytes(editable.LastBackupPath).SequenceEqual(before), "Save As replaces destination with backup and updates path");
             Console.WriteLine("PORTABLE CHECKS PASSED");
             return 0;
         }

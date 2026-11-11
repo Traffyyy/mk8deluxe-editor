@@ -1,14 +1,16 @@
 # mk8deluxe editor
 
-An unofficial desktop editor for the supported Mario Kart 8 Deluxe `Performance.bin`
-layout, by **Traffy** ([Traffyyy](https://github.com/Traffyyy)). First public build: **1.0.0 — beta**. This is a prerelease, not a fully validated stable release.
+> **Updated development builds:** the disk button and Ctrl/Command+S now save to the opened file. Ctrl/Command+Shift+S (or Save As in the portable actions menu) chooses a destination and asks before replacing an existing file. Each overwrite keeps a uniquely named `.bak` file beside the destination. External changes to the opened file are rejected: reopen it or save under a different name. The original Hex pane remains the snapshot from when you opened the file. Older 1.0.0 release downloads still use copy-only saving; the historical instructions below describe those downloads.
+
+
+I created **mk8deluxe editor** to edit statistics in Mario Kart 8 Deluxe `Performance.bin` files. First public build: **1.0.0 — beta**. This is a prerelease, not a fully validated stable release.
 
 The original Windows WPF application is preserved in `Source/`. A separate Avalonia
 application in `CrossPlatform/` provides Windows x64, macOS Apple Silicon/Intel and
 Linux x64 build targets. Automated checks have passed on Linux and macOS; interactive use and audible playback still need broader testing. See
 [platform support](docs/PLATFORM-SUPPORT.md) and [verification](VERIFICATION.md).
 
-**Tested game version: Mario Kart 8 Deluxe 3.0.5** (reported by Traffy). Other game versions are unverified. File-layout validation is not game-version detection.
+I tested the editor with **Mario Kart 8 Deluxe 3.0.5**. Other game versions are unverified. File-layout validation is not game-version detection.
 
 **Start here: [step-by-step user guide](docs/USER-GUIDE.md).** Includes editing, copying, batch changes, Hex, saving and platform-specific shortcuts.
 
@@ -22,6 +24,12 @@ Linux x64 build targets. Automated checks have passed on Linux and macOS; intera
 - Two-way navigation between statistics and their bytes.
 - Light/dark themes and the original bundled music with playback/volume controls.
 - Save to a new file; the opened file and existing destinations are not overwritten.
+
+## Required game file
+
+You need your own **`Performance.bin`, extracted from the RomFS of Mario Kart 8 Deluxe**. Use the RomFS for the game version you intend to modify; my tests used **3.0.5**. In the extracted RomFS, look in **`Common/Mush/Performance.bin`**.
+
+The editor opens the extracted `Performance.bin` directly. It does not open a ROM/container or extract RomFS for you. The file is not included with the editor. Keep an untouched backup before editing.
 
 ## Download and start
 
@@ -83,8 +91,7 @@ The final character entry is Mii (DLC costumes), using a representative image.
 
 Original project code is [MIT licensed](LICENSE), copyright 2026 Traffy.
 The MIT grant excludes Nintendo artwork, the icon derived from that artwork, the
-bundled recording and other third-party components. The publisher has chosen to
-include the existing media as-is; this does not establish permission from their
+bundled recording and other third-party components. I have included the existing media as-is; this does not establish permission from their
 rights holders. See [license scope](LICENSE-STATUS.md) and
 [third-party notices](THIRD-PARTY-NOTICES.md).
 
@@ -100,4 +107,3 @@ These are actual off-screen WPF renders. They do not demonstrate native macOS/Li
 ![Statistics in dark mode](docs/images/statistics-dark.png)
 
 ![Linked Hex comparison](docs/images/hex-comparison-dark.png)
-

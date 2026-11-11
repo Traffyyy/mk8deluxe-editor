@@ -13,6 +13,8 @@ namespace Mk8Editor.Core
     public sealed class EditSession
     {
         private readonly byte[] original;
+        private byte[] diskSnapshot;
+        public string LastBackupPath { get; private set; }
         private readonly HashSet<int> editableOffsets;
         private readonly Dictionary<int, uint> changes = new Dictionary<int, uint>();
         private Dictionary<int, uint> exportedChanges = new Dictionary<int, uint>();
@@ -28,7 +30,7 @@ namespace Mk8Editor.Core
         }
         public EditSession(PerformanceFile file, string sourcePath)
         {
-            File = file; SourcePath = Path.GetFullPath(sourcePath); original = file.CopyOriginalBytes();
+            File = file; SourcePath = Path.GetFullPath(sourcePath); original = file.CopyOriginalBytes(); diskSnapshot = (byte[])original.Clone();
             editableOffsets = new HashSet<int>(file.Records.SelectMany(record => Enumerable.Range(0, 14).Select(index => record.Offset + index * 4)));
         }
         public static EditSession Open(string path)
@@ -70,6 +72,31 @@ namespace Mk8Editor.Core
             foreach (var change in changes) PerformanceFile.WriteUInt32(result, change.Key, change.Value);
             return result;
         }
+        public void Save() { SaveAs(SourcePath); }
+        public void SaveAs(string destination)
+        {
+            string target = Path.GetFullPath(destination);
+            bool same = String.Equals(target, SourcePath, StringComparison.OrdinalIgnoreCase);
+            bool exists = System.IO.File.Exists(target);
+            if (exists && (System.IO.File.GetAttributes(target) & FileAttributes.ReparsePoint) != 0)
+                throw new UserFileException("Choose a regular file, not a symbolic link.");
+            if (same && (!exists || !System.IO.File.ReadAllBytes(target).SequenceEqual(diskSnapshot)))
+                throw new UserFileException("The opened file changed on disk. Reopen it or use Save As to a new filename.");
+            byte[] result = Serialize();
+            string temporary = Path.Combine(Path.GetDirectoryName(target), ".mk8-" + Guid.NewGuid().ToString("N") + ".tmp");
+            string backup = exists ? target + "." + Guid.NewGuid().ToString("N") + ".bak" : null;
+            try
+            {
+                using (var stream = new FileStream(temporary, FileMode.CreateNew, FileAccess.Write, FileShare.None))
+                { stream.Write(result, 0, result.Length); stream.Flush(true); }
+                if (!System.IO.File.ReadAllBytes(temporary).SequenceEqual(result)) throw new UserFileException("Save verification failed.");
+                if (exists) System.IO.File.Replace(temporary, target, backup);
+                else System.IO.File.Move(temporary, target);
+                SourcePath = target; diskSnapshot = (byte[])result.Clone(); LastBackupPath = backup;
+                exportedChanges = new Dictionary<int, uint>(changes); LastExportPath = target;
+            }
+            finally { if (System.IO.File.Exists(temporary)) System.IO.File.Delete(temporary); }
+        }
         public void SaveCopy(string destination)
         {
             string fullPath = Path.GetFullPath(destination);
@@ -97,3 +124,4 @@ namespace Mk8Editor.Core
         }
     }
 }
+
