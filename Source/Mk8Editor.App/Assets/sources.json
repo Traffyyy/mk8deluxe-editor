@@ -1,0 +1,788 @@
+{
+  "PTBD_00.png": {
+    "subject": "Standard Kart",
+    "url": "https://mario.wiki.gallery/images/0/05/StandardKartBodyMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "96e1ec7ed7a7bf11fc8293ed0a98e96eb284515c0fe044eab9d1afa3cbc4023d"
+  },
+  "PTBD_01.png": {
+    "subject": "Pipe Frame",
+    "url": "https://mario.wiki.gallery/images/d/d1/PipeFrameBodyMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "ecb7fdc63e687b99d2d918007f1ef8b47544dfe3e23b8406eb44216c37e41523"
+  },
+  "PTBD_02.png": {
+    "subject": "Mach 8",
+    "url": "https://mario.wiki.gallery/images/d/df/Mach8BodyMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "91cbae646f8b375e39954fcb1e0185dccf6d879de81fbc9613972606e19c5a0f"
+  },
+  "PTBD_03.png": {
+    "subject": "Steel Driver",
+    "url": "https://mario.wiki.gallery/images/9/94/Steel_Driver.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "b6b042e31faf22883e74e0cbac8190116c92370f557ba43806861d14d5fe49ab"
+  },
+  "PTBD_04.png": {
+    "subject": "Cat Cruiser",
+    "url": "https://mario.wiki.gallery/images/f/f4/CatCruiserBodyMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "969b8109de55e7ce3be95fe6c91370e2a30e2e7e4fc8578aed87b1e74d015ded"
+  },
+  "PTBD_05.png": {
+    "subject": "Circuit Special",
+    "url": "https://mario.wiki.gallery/images/6/6c/CircuitSpecialBodyMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "663737b45ec0be56503ba95933bef2a2229192e3e19c5810abf69dfc5745c744"
+  },
+  "PTBD_06.png": {
+    "subject": "Tri-Speeder",
+    "url": "https://mario.wiki.gallery/images/5/56/TrispeederBodyMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "7ce2f4f552879b94fd6f6cf660c570be2539650a97a112608067e8a21af3fecf"
+  },
+  "PTBD_07.png": {
+    "subject": "Badwagon",
+    "url": "https://mario.wiki.gallery/images/c/c2/BadwagonBodyMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "c6c2753c32132f176454fb4028e065bad487e4c826019f119ebde8b9a4f3df78"
+  },
+  "PTBD_08.png": {
+    "subject": "Prancer",
+    "url": "https://mario.wiki.gallery/images/f/ff/PrancerBodyMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "e69df0b29e42e7c6292b35e05da76f7572cd4309d4d7f3a7cb958931b5705209"
+  },
+  "PTBD_09.png": {
+    "subject": "Biddybuggy",
+    "url": "https://mario.wiki.gallery/images/4/45/BiddybuggyBodyMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "69db247af3cb9033e4f22f775948346d1aa6f0b01c2c919cd14a68584a3054f9"
+  },
+  "PTBD_10.png": {
+    "subject": "Landship",
+    "url": "https://mario.wiki.gallery/images/6/6d/LandshipBodyMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "cf751381ca9342e8dcdcf7c915a56291648d9a0e786a35a2af08ee6775cc650e"
+  },
+  "PTBD_11.png": {
+    "subject": "Sneeker",
+    "url": "https://mario.wiki.gallery/images/4/47/SneakerBodyMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "635f12a04d75562060cb14f0c02fcd0c9b67de2249bacf4e96969cc31025f1f8"
+  },
+  "PTBD_12.png": {
+    "subject": "Sports Coupe",
+    "url": "https://mario.wiki.gallery/images/f/f8/SportsCoupeMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "1baedf8bf998a83e63b93cb7d8e3875f3e3d723427bc68dd89b0715778258b63"
+  },
+  "PTBD_13.png": {
+    "subject": "Gold Standard",
+    "url": "https://mario.wiki.gallery/images/f/fe/Gold_Standard.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "ba00b1cd8f2a11f189c1abbc13f7aba09a40234d494bddada5ae2cdcca9b4de8"
+  },
+  "PTBD_14.png": {
+    "subject": "Standard Bike",
+    "url": "https://mario.wiki.gallery/images/8/84/StandardBikeBodyMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "c93e5d93b980fa0a812be27aa755685d9332410da8e5bd16a62061aeefd6b842"
+  },
+  "PTBD_15.png": {
+    "subject": "Comet",
+    "url": "https://mario.wiki.gallery/images/0/0e/CometBodyMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "0a7740cdfd8a1e431b52724b64802bd01cb26bf7761295c1a4cea6c11f507ea2"
+  },
+  "PTBD_16.png": {
+    "subject": "Sport Bike",
+    "url": "https://mario.wiki.gallery/images/f/fe/SportBikeBodyMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "9864a02ba3c8e426e7c1570bc58a7c5eabbc254fb41cec6027161c748ea064da"
+  },
+  "PTBD_17.png": {
+    "subject": "The Duke",
+    "url": "https://mario.wiki.gallery/images/8/8a/TheDukeBodyMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "2b756354f6941c64397b588fffd2748f3a0818374a98cc4643aff150c51b5f56"
+  },
+  "PTBD_18.png": {
+    "subject": "Flame Rider",
+    "url": "https://mario.wiki.gallery/images/3/31/FlameRiderBodyMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "5f88046b31564a02bc76848c40a9cd02a2e0824d4a69dd091fa7f8bc1b8e529e"
+  },
+  "PTBD_19.png": {
+    "subject": "Varmint",
+    "url": "https://mario.wiki.gallery/images/d/d0/VarmintBodyMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "191e5309a248fc41cec969d36728c16e416e7bcb5444f2ddda9d2af9d2a8060f"
+  },
+  "PTBD_20.png": {
+    "subject": "Mr. Scooty",
+    "url": "https://mario.wiki.gallery/images/1/18/MrScootyBodyMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "60f043957ca1aa2636ae2e65a911f645b28904280b1a848238d5f34c75ce8d6b"
+  },
+  "PTBD_21.png": {
+    "subject": "Jet Bike",
+    "url": "https://mario.wiki.gallery/images/1/12/JetBikeBodyMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "7cc57c47d3d44d72da910586290384d643c626c591de869d14c9cede10ac1200"
+  },
+  "PTBD_22.png": {
+    "subject": "Yoshi Bike",
+    "url": "https://mario.wiki.gallery/images/6/62/YoshiBikeBodyMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "ed65f18d0a18f02f307865cd9375ab695a42a180a0040da516b9daff09ee80d1"
+  },
+  "PTBD_23.png": {
+    "subject": "Standard ATV",
+    "url": "https://mario.wiki.gallery/images/2/23/StandardATVBodyMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "d698ae4a53b8996c038a4624678ce035c7e22d584952faf018a755ef4be5c972"
+  },
+  "PTBD_24.png": {
+    "subject": "Wild Wiggler",
+    "url": "https://mario.wiki.gallery/images/a/aa/WildWigglerBodyMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "34b5c56ada49ccbded6e29c5fd4ef95a0c173cc446c03298a7edb37aad9e5e03"
+  },
+  "PTBD_25.png": {
+    "subject": "Teddy Buggy",
+    "url": "https://mario.wiki.gallery/images/f/fa/TeddyBuggyBodyMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "b559f9707316876a391f782a1f1ec23fa5e2aab6bc54fb6f2536f5d738d9cef2"
+  },
+  "PTBD_26.png": {
+    "subject": "GLA",
+    "url": "https://mario.wiki.gallery/images/c/c2/GLA-MK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "d33b5201be4830c2e94daf36e2d05023434890e65ab542a130cc2843a856bc01"
+  },
+  "PTBD_27.png": {
+    "subject": "W 25 Silver Arrow",
+    "url": "https://mario.wiki.gallery/images/2/25/W25SilverArrow-MK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "416d2f8bf9a83cfdf0289dd1055e3270780d3724052107345d203bb1249d8f3b"
+  },
+  "PTBD_28.png": {
+    "subject": "300 SL Roadster",
+    "url": "https://mario.wiki.gallery/images/f/f4/300SLRoadster_MK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "e788b0929095dc73f2e3c7bec760c14ef8838f3ded5b45ec1873522496e06a51"
+  },
+  "PTBD_29.png": {
+    "subject": "Blue Falcon",
+    "url": "https://mario.wiki.gallery/images/f/f6/MK8BlueFalcon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "347d8787edbc8884f93f96d7f31186f9e6351106271b5453b32043ceb0add4a6"
+  },
+  "PTBD_30.png": {
+    "subject": "Tanooki Kart",
+    "url": "https://mario.wiki.gallery/images/7/76/MK8_Tanooki_Buggy_Sprite.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "f717f7d3a23c6bbda4ab971efff6ef719a85cdbe61ef9d253242e316534e7c9b"
+  },
+  "PTBD_31.png": {
+    "subject": "B Dasher",
+    "url": "https://mario.wiki.gallery/images/1/15/ZeldaMK8Bdasher.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "a9ef4972f9fea1c772f281cf92ec3eaf367ae66993b52c3cc9cd46511ae3ec41"
+  },
+  "PTBD_32.png": {
+    "subject": "Master Cycle",
+    "url": "https://mario.wiki.gallery/images/8/8a/MK8MasterCycle.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "d42e00b483ea9f31044703d83fcc8a949068d4d85ed213958d43042ba87237b6"
+  },
+  "PTBD_33.png": {
+    "subject": "Streetle",
+    "url": "https://mario.wiki.gallery/images/c/cf/MK8Streetle.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "9e04afdcb38edc081f2af11b406343d3b649f9bb2ec2999c92b8ae9495afc2fd"
+  },
+  "PTBD_34.png": {
+    "subject": "P-Wing",
+    "url": "https://mario.wiki.gallery/images/c/cd/MK8PWing.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "be8fbfd4ea1da6d90481c3f8d90a29c2b0d49de01df5a03aaa4ae6962aabf2e8"
+  },
+  "PTBD_35.png": {
+    "subject": "City Tripper",
+    "url": "https://mario.wiki.gallery/images/b/be/MK8_Light-Green_City_Tripper.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "88a211a342073ee6d7bc3cca7b8f93e9705971f5f723c491091d2425aa9075ae"
+  },
+  "PTBD_36.png": {
+    "subject": "Bone Rattler",
+    "url": "https://mario.wiki.gallery/images/0/0a/MK8BoneRattler.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "05d03f9e284ccb7438047b814aa7433ed9d4ed58a014db690ed11fa9baee9776"
+  },
+  "PTBD_37.png": {
+    "subject": "Koopa Clown",
+    "url": "https://mario.wiki.gallery/images/7/70/MK8DX_Koopa_Clown.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "8a28f1fcb5a3894db278e0537557564ad88e9553251066e34ba5d61f5fb484d5"
+  },
+  "PTBD_38.png": {
+    "subject": "Splat Buggy",
+    "url": "https://mario.wiki.gallery/images/6/63/MK8DX_Splat_Buggy.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "b12e15475a3a87d028c74afdf5e822a940d1a489411f3a4fbd1fc5e08da35554"
+  },
+  "PTBD_39.png": {
+    "subject": "Inkstriker",
+    "url": "https://mario.wiki.gallery/images/e/eb/MK8DX_Inkstriker.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "969653f8eb926e86d4f68c581982113d30f18c08d3eeb4658a5a7715905e5905"
+  },
+  "PTBD_40.png": {
+    "subject": "Master Cycle Zero",
+    "url": "https://mario.wiki.gallery/images/2/26/MK8D_Master_Cycle_Zero.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "5cc44a0b146198fda0ab94c88c9247e746b17b9b82eec73b1376e4c07ea90955"
+  },
+  "PTDV_00.png": {
+    "subject": "Mario",
+    "url": "https://mario.wiki.gallery/images/d/d9/MK8_Mario_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "305d65686698d2ed54706325e9978055b7f85fc82afec536a66cbde844b9473b"
+  },
+  "PTDV_01.png": {
+    "subject": "Luigi",
+    "url": "https://mario.wiki.gallery/images/5/51/MK8_Luigi_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "9dee34a9b30bf6c5d596ac8adb1ee7f75a9f52eee9eac7f7c358c0ac08f541cb"
+  },
+  "PTDV_02.png": {
+    "subject": "Peach",
+    "url": "https://mario.wiki.gallery/images/c/c2/MK8_Peach_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "73cdaa936fcf1e45fa61261d6ceb9214da62aac5320f9fa8fb2943f09a1ddc14"
+  },
+  "PTDV_03.png": {
+    "subject": "Daisy",
+    "url": "https://mario.wiki.gallery/images/3/32/MK8_Daisy_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "8559491266e8ed7fa67f658ff96515b0ff18e371e91f7870504f4acd67f155bf"
+  },
+  "PTDV_04.png": {
+    "subject": "Yoshi",
+    "url": "https://mario.wiki.gallery/images/9/91/MK8_Yoshi_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "64591bb24d4aa1bb80584c4569b0158b03b25d390d5650200d203da0c12598a7"
+  },
+  "PTDV_05.png": {
+    "subject": "Toad",
+    "url": "https://mario.wiki.gallery/images/4/45/MK8_Toad_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "0b7837b0aecd2173563cd8ce123e6f7459accb83f44e774dd0dd7ec570fe381a"
+  },
+  "PTDV_06.png": {
+    "subject": "Toadette",
+    "url": "https://mario.wiki.gallery/images/8/8e/MK8_Toadette_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "6b54d1b1f4f4ecbc0dc8d97d18d1012d6733648d6097a120293ec4929df4cafd"
+  },
+  "PTDV_07.png": {
+    "subject": "Koopa Troopa",
+    "url": "https://mario.wiki.gallery/images/b/bc/MK8_Koopa_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "c5ae3919a31f01e990df3fbd3dfc989ac74893cffcaeabb8fb97082ce7466e0a"
+  },
+  "PTDV_08.png": {
+    "subject": "Bowser",
+    "url": "https://mario.wiki.gallery/images/4/47/MK8_Bowser_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "5a7e3ff486355352c67e8da40c3cb2e2f3d0ed9dc47125cfcaf578c296838547"
+  },
+  "PTDV_09.png": {
+    "subject": "Donkey Kong",
+    "url": "https://mario.wiki.gallery/images/0/08/MK8_DKong_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "b94d3209909cce06f3ff3437c409e9d90dc5e0aa19692a39f49c9a1a4b6cb750"
+  },
+  "PTDV_10.png": {
+    "subject": "Wario",
+    "url": "https://mario.wiki.gallery/images/c/c2/MK8_Wario_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "76da719874faddde0c809e8de6bf5f8d2f99fe276bdbd936e6faa5a15fd40aca"
+  },
+  "PTDV_11.png": {
+    "subject": "Waluigi",
+    "url": "https://mario.wiki.gallery/images/7/78/MK8_Waluigi_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "ecabc4cdc0f059f6474ee35e8206620fdf058c1f376d10ed1f62bd9ccd512d34"
+  },
+  "PTDV_12.png": {
+    "subject": "Rosalina",
+    "url": "https://mario.wiki.gallery/images/8/89/MK8_Rosalina_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "3718c84b4a83171d42b31b046315065fbb1ceb0fbb4977bba87258a000018091"
+  },
+  "PTDV_13.png": {
+    "subject": "Metal Mario",
+    "url": "https://mario.wiki.gallery/images/e/e3/MK8_MMario_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "3f3fb501511f4e8afcda8c64c4e4051a077039954dce0fb200fd07b3deaf1282"
+  },
+  "PTDV_14.png": {
+    "subject": "Pink Gold Peach",
+    "url": "https://mario.wiki.gallery/images/0/0d/MK8_PGPeach_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "c3c826d4c5974bee4f90ac22cbffff2dcaf195252f0c045b45d43b85c5537e0d"
+  },
+  "PTDV_15.png": {
+    "subject": "Lakitu",
+    "url": "https://mario.wiki.gallery/images/7/7d/MK8_Lakitu_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "8da068ca89c088a188b6d86bc7b6584cf884543b90429583903f3dff401ce89d"
+  },
+  "PTDV_16.png": {
+    "subject": "Shy Guy",
+    "url": "https://mario.wiki.gallery/images/7/7f/MK8_ShyGuy_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "ce9bdf46031b6600d781a87f51655d8efba6e18167fb81644c22610927dd506a"
+  },
+  "PTDV_17.png": {
+    "subject": "Baby Mario",
+    "url": "https://mario.wiki.gallery/images/d/d2/MK8_BabyMario_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "8d030af11920e07d1aed08f4c168761be825513ddd550a8df66d7298de799e12"
+  },
+  "PTDV_18.png": {
+    "subject": "Baby Luigi",
+    "url": "https://mario.wiki.gallery/images/a/aa/MK8_BabyLuigi_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "7c1d935ee576d857639b58bcd27087988cda344bcc806f39fb89f459771dabee"
+  },
+  "PTDV_19.png": {
+    "subject": "Baby Peach",
+    "url": "https://mario.wiki.gallery/images/3/3d/MK8_BabyPeach_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "d72d0ef42df875e013ffa45a514ca7e9794782bc325aad121a4fe2afebc66010"
+  },
+  "PTDV_20.png": {
+    "subject": "Baby Daisy",
+    "url": "https://mario.wiki.gallery/images/4/43/MK8_BabyDaisy_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "93c94af4d20607309ee8bd2d582bb002e4d64d8cb9b26d13ed95bbf81f29d2db"
+  },
+  "PTDV_21.png": {
+    "subject": "Baby Rosalina",
+    "url": "https://mario.wiki.gallery/images/0/09/MK8_BabyRosalina_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "5f5c6b89ce13d199d2598666d939b10c1321902aee9a70f03967552562f018d1"
+  },
+  "PTDV_22.png": {
+    "subject": "Larry",
+    "url": "https://mario.wiki.gallery/images/c/c2/MK8_Larry_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "1b3f02a1d341c374dbb7748d73399ca2b92b821ef14e9cba9cc0214859aa1d4e"
+  },
+  "PTDV_23.png": {
+    "subject": "Lemmy",
+    "url": "https://mario.wiki.gallery/images/f/fc/MK8_Lemmy_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "4e500f48ff21025cb00c0e4fdec718b904f8415890ce370c50a16b8834cf6b08"
+  },
+  "PTDV_24.png": {
+    "subject": "Wendy",
+    "url": "https://mario.wiki.gallery/images/d/d9/MK8_Wendy_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "7bab398dc74c355eecb216468249304404c17569cccc6cb7c572f9efaf52af27"
+  },
+  "PTDV_25.png": {
+    "subject": "Ludwig",
+    "url": "https://mario.wiki.gallery/images/a/a8/MK8_Ludwig_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "995915903b2679775f19de74644062853c7b036c48e514aab4f9832c57565ce3"
+  },
+  "PTDV_26.png": {
+    "subject": "Iggy",
+    "url": "https://mario.wiki.gallery/images/d/dd/MK8_Iggy_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "e04d95f4cafc997602b7f2693fa5bcb337f6b7497e0c1ce917666f0ba60f8e7f"
+  },
+  "PTDV_27.png": {
+    "subject": "Roy",
+    "url": "https://mario.wiki.gallery/images/3/3e/MK8_Roy_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "2c25f97134d8f7d20893dd131f25523e8531db1cd11e79df481ebbde94e8bf7e"
+  },
+  "PTDV_28.png": {
+    "subject": "Morton",
+    "url": "https://mario.wiki.gallery/images/7/72/MK8_Morton_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "83bea7df17099ed47fa37212199cd2a71e6fa59cc21dd0d5b60e4e3492caf4a8"
+  },
+  "PTDV_29.png": {
+    "subject": "Mii (medium)",
+    "url": "https://mario.wiki.gallery/images/b/bb/Mii_MK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "278251b2250dd2219b0b47c3dfd8746a8e7222a6967a9779de6ca8e34410cfdc"
+  },
+  "PTDV_30.png": {
+    "subject": "Tanooki Mario",
+    "url": "https://mario.wiki.gallery/images/a/a2/MK8_Tanooki_Mario_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "e87da5e578a230ac3a3cd7504e9428e68c6020ddb490c3e752f49f59a87e9dd1"
+  },
+  "PTDV_31.png": {
+    "subject": "Link",
+    "url": "https://mario.wiki.gallery/images/e/e8/MK8_Link_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "fab19ba8ac089c7dd5937fe58d625359b99487f8ef0e5cff0912e9c0a3dd487a"
+  },
+  "PTDV_32.png": {
+    "subject": "Villager (male)",
+    "url": "https://mario.wiki.gallery/images/1/16/VillagerMale-Icon-MK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "cabcff285aa300788c328429a3b1f5e3e33c3dacc241be1775890af4f80f5bc3"
+  },
+  "PTDV_33.png": {
+    "subject": "Isabelle",
+    "url": "https://mario.wiki.gallery/images/2/20/MK8_Isabelle_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "65e1c6d30fccb1d7d275386c14014875091dbc8fc6fe86328c878c9c87d4bf21"
+  },
+  "PTDV_34.png": {
+    "subject": "Cat Peach",
+    "url": "https://mario.wiki.gallery/images/a/ad/MK8_Cat_Peach_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "616e30e5496961a4550ec893a6ae19113d026d751d3bdb44e068627a98ebbacc"
+  },
+  "PTDV_35.png": {
+    "subject": "Dry Bowser",
+    "url": "https://mario.wiki.gallery/images/2/29/MK8_Dry_Bowser_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "810a57f500edabd67c11ee8b99c0d4e095ef7d3d77bbe3d896190442f13c4278"
+  },
+  "PTDV_36.png": {
+    "subject": "Villager (female)",
+    "url": "https://mario.wiki.gallery/images/c/c3/VillagerFemale-Icon-MK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "e0da4d267085068df90269bd27c82713b2509e8451065601962a0984017eb0ea"
+  },
+  "PTDV_37.png": {
+    "subject": "Gold Mario",
+    "url": "https://mario.wiki.gallery/images/c/c8/MK8DX_Gold_Mario_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "1c65351a4545e44ddb52addb57f08713e95d68701fbfef5e8e27633bef40b815"
+  },
+  "PTDV_38.png": {
+    "subject": "Dry Bones",
+    "url": "https://mario.wiki.gallery/images/3/3f/MK8DX_Dry_Bones_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "a9dd1104c984f32399162c3e59aa3cf7a4e6d6a73a39618cbb31b2601a6e2b6e"
+  },
+  "PTDV_39.png": {
+    "subject": "Bowser Jr.",
+    "url": "https://mario.wiki.gallery/images/2/26/MK8_Bowser_Jr_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "0390705601475cdc1815ae5d337e27463e373567d7ffa1f888114b4adbfd4bef"
+  },
+  "PTDV_40.png": {
+    "subject": "King Boo",
+    "url": "https://mario.wiki.gallery/images/1/1d/MK8DX_King_Boo_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "86ca419639d166660f41e21a7c5a39ec8367966e82b6cfab0284d26631a78852"
+  },
+  "PTDV_41.png": {
+    "subject": "Inkling Girl",
+    "url": "https://mario.wiki.gallery/images/b/b9/MK8DX_Female_Inkling_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "e4d52523b72cf0c8498fcc2d185d9c86cb7aa992ec9801c244a8e8e54ec050c0"
+  },
+  "PTDV_42.png": {
+    "subject": "Inkling Boy",
+    "url": "https://mario.wiki.gallery/images/3/3c/MK8DX_Male_Inkling_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "97a6949a6fa851248dded6afab98212e5c83d541db9eaad1e41ccaa3b446bb61"
+  },
+  "PTDV_43.png": {
+    "subject": "Link (Breath of the Wild)",
+    "url": "https://mario.wiki.gallery/images/9/9e/MK8D_BotW_Link_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "2619c4f063393038512f83dfc9a3f23b7eea2bbb347ce54b8ed0fae8be6e916a"
+  },
+  "PTDV_44.png": {
+    "subject": "Birdo",
+    "url": "https://mario.wiki.gallery/images/2/2b/MKT_Icon_Birdo.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "ff8ad58a1395cb9c9712a796476310385bea170b7dea74d7ebbba84367012a1c"
+  },
+  "PTDV_45.png": {
+    "subject": "Kamek",
+    "url": "https://mario.wiki.gallery/images/0/00/MK8DX_Kamek_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "90a23193094e84765094d40055579cebd34869fb80af6e648c44e4a76f6d887c"
+  },
+  "PTDV_46.png": {
+    "subject": "Petey Piranha",
+    "url": "https://mario.wiki.gallery/images/8/86/MK8DX_Petey_Piranha_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "45dfe3ab945711b00928d7b81f77e59d3e43d8a6ebce60b3b9fd57bc6c056320"
+  },
+  "PTDV_47.png": {
+    "subject": "Wiggler",
+    "url": "https://mario.wiki.gallery/images/7/7e/MK8DX_Wiggler_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "9cd4d40daeab7f9ba9043f7ae747b44900b022576dd3bfd982221087b9fec73e"
+  },
+  "PTDV_48.png": {
+    "subject": "Diddy Kong",
+    "url": "https://mario.wiki.gallery/images/8/82/MK8DX_Diddy_Kong_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "7ad2ffab614940b79c13024e2008cec6ed0a3b9bdb55142bbaadbb96f2bb9383"
+  },
+  "PTDV_49.png": {
+    "subject": "Funky Kong",
+    "url": "https://mario.wiki.gallery/images/4/4a/MK8DX_Funky_Kong_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "fd5da2a194837c2d5940682cddc38b452ac50a063792e69c13a9e073f29fc0cc"
+  },
+  "PTDV_50.png": {
+    "subject": "Peachette",
+    "url": "https://mario.wiki.gallery/images/f/fd/MK8DX_Peachette_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "ea8d1ad4fc97893f0e6303ddb9a7c5bae86126d4161b76fa8183fd5de08da973"
+  },
+  "PTDV_51.png": {
+    "subject": "Pauline",
+    "url": "https://mario.wiki.gallery/images/d/dd/MK8DX_Pauline_Icon.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "389c79b66ff3b7946cefa6fd2a87841700a9cb7f162eda851cbb9f06ff52e334"
+  },
+  "PTDV_52.png": {
+    "subject": "Mii (costumi DLC)",
+    "url": "https://mario.wiki.gallery/images/b/bb/Mii_MK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "278251b2250dd2219b0b47c3dfd8746a8e7222a6967a9779de6ca8e34410cfdc"
+  },
+  "PTTR_00.png": {
+    "subject": "Standard",
+    "url": "https://mario.wiki.gallery/images/a/a8/StandardTiresMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "e67838e00a76400d490127e6724a4ab358910b8f642b56f8be733020e6983681"
+  },
+  "PTTR_01.png": {
+    "subject": "Monster",
+    "url": "https://mario.wiki.gallery/images/2/29/MonsterTiresMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "c447e65d36856a227eb2e92cefcd080f7467ed2e253486d8b8de2086bd768aca"
+  },
+  "PTTR_02.png": {
+    "subject": "Roller",
+    "url": "https://mario.wiki.gallery/images/7/76/RollerTiresMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "cfe72e99b5772297215c69a204a4a5e9c169b053a78f9e06346c9b324eef3be0"
+  },
+  "PTTR_03.png": {
+    "subject": "Slim",
+    "url": "https://mario.wiki.gallery/images/f/f8/SlimTiresMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "38bccccf31d9c79a99260ec89fb4c52d28c83363d532a9411d3a6015e6a40a40"
+  },
+  "PTTR_04.png": {
+    "subject": "Slick",
+    "url": "https://mario.wiki.gallery/images/d/dd/SlickTiresMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "33d220e4e523eeb148f32b00ea44080471d63dcae2a317520cc98776406e43b9"
+  },
+  "PTTR_05.png": {
+    "subject": "Metal",
+    "url": "https://mario.wiki.gallery/images/9/96/MetalTiresMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "f6b52657f6d95bf2d3c651b4784e1c2fb94b70083ea768ef1265fb2df63e9414"
+  },
+  "PTTR_06.png": {
+    "subject": "Button",
+    "url": "https://mario.wiki.gallery/images/0/07/ButtonTiresMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "ef136ced024a3a57e8d548ef3cb4a4b9a3391d65586898fbcac1cbee8d1ac59b"
+  },
+  "PTTR_07.png": {
+    "subject": "Off-Road",
+    "url": "https://mario.wiki.gallery/images/2/25/Off-Road.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "b176ec9f3555ec839fbe974093ca5fd96a98eb23421dd8bba260610d784c6fe2"
+  },
+  "PTTR_08.png": {
+    "subject": "Sponge",
+    "url": "https://mario.wiki.gallery/images/4/4c/SpongeTiresMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "fe2dbb00fe123ff978f316e4979b256ebe01d995bcf0c48af64ff44e07fc98e3"
+  },
+  "PTTR_09.png": {
+    "subject": "Wood",
+    "url": "https://mario.wiki.gallery/images/0/03/WoodTiresMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "f8a3c1286d77cd3da1fd45c013748d5bd7185c401057473654f0f3cf8e219763"
+  },
+  "PTTR_10.png": {
+    "subject": "Cushion",
+    "url": "https://mario.wiki.gallery/images/9/92/CushionTiresMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "6a0b4e274eafedd11dc4f4da506e70f4c02b82f4eadc9f608639818e64da2c57"
+  },
+  "PTTR_11.png": {
+    "subject": "Blue Standard",
+    "url": "https://mario.wiki.gallery/images/d/db/Blue_Standard.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "507da9dd40bf10d10d25bc5f506e25e678e1217fe573a20fb4d76653d940fddb"
+  },
+  "PTTR_12.png": {
+    "subject": "Hot Monster",
+    "url": "https://mario.wiki.gallery/images/d/d1/HotMonsterTiresMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "b2eef054ee800ec72ad1547a5b7f88a42cc949cc5c42fa0fe5ad091cb4c91091"
+  },
+  "PTTR_13.png": {
+    "subject": "Azure Roller",
+    "url": "https://mario.wiki.gallery/images/f/fe/AzureRollerTiresMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "30c886cb839891b180e8a3765da79b22c85c86dd0dbd6bd32c6f7763c8b656c0"
+  },
+  "PTTR_14.png": {
+    "subject": "Crimson Slim",
+    "url": "https://mario.wiki.gallery/images/7/71/CrimsonSlimTiresMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "e316a84e38aa27ba74c7fcb1a2c14dbef29446a5a23e9bb9db8e9979cc5322db"
+  },
+  "PTTR_15.png": {
+    "subject": "Cyber Slick",
+    "url": "https://mario.wiki.gallery/images/2/29/CyberSlickTiresMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "fb7b33b28edd6c2d68b9d6a46ba6f47994756e873cc83a1730ac6f846b99e9f5"
+  },
+  "PTTR_16.png": {
+    "subject": "Retro Off-Road",
+    "url": "https://mario.wiki.gallery/images/4/48/Retro_Off-Road.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "6fb967a70404faea5365a00885d1e809116040ab97ff459add1408038e310a32"
+  },
+  "PTTR_17.png": {
+    "subject": "Gold Tires",
+    "url": "https://mario.wiki.gallery/images/5/52/Gold_Tires_MK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "2b43af9fb51c8ea30b28c73186dfe04c3fe2f1238f0ce6a8c7eb9224b1717738"
+  },
+  "PTTR_18.png": {
+    "subject": "GLA Tires",
+    "url": "https://mario.wiki.gallery/images/b/ba/GLATires-MK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "35dafd2e9745dbed4acae1749687705cb94421699e70150826689fda81b6b9e7"
+  },
+  "PTTR_19.png": {
+    "subject": "Triforce Tires",
+    "url": "https://mario.wiki.gallery/images/9/9d/MK8-TriforceTires.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "c2268fccd465e8099e3f29ef800842ee05261ba9aed9f3148663bcadee2ac3b7"
+  },
+  "PTTR_20.png": {
+    "subject": "Leaf Tires",
+    "url": "https://mario.wiki.gallery/images/f/f9/Leaf_Tires_MK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "af59a46cbbe13a4e419a4e2dda6d3eef3eb1284cb44b9cfb2c32d800ba2ddd9d"
+  },
+  "PTTR_21.png": {
+    "subject": "Ancient Tires",
+    "url": "https://mario.wiki.gallery/images/d/d5/MK8D_Ancient_Tires.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "d0157225cd861de4be4261781425a4d63b204ba667a1622f5f40706fa9e88f86"
+  },
+  "PTWG_00.png": {
+    "subject": "Super Glider",
+    "url": "https://mario.wiki.gallery/images/a/a8/SuperGliderMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "8d34a50c8932ef733c49413f1e236dfa3436d92691088479a283946064a52907"
+  },
+  "PTWG_01.png": {
+    "subject": "Cloud Glider",
+    "url": "https://mario.wiki.gallery/images/8/84/Cloud_Glider.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "7227df92aeae7b6feee434e81fd9d9b6c7988bbb53f24b9bad2ac241ab5f4757"
+  },
+  "PTWG_02.png": {
+    "subject": "Wario Wing",
+    "url": "https://mario.wiki.gallery/images/a/ae/WarioWingMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "f7046416b3cdef935c00d6ca699231d27bcb7d72f24949a4d4052e61e3da9795"
+  },
+  "PTWG_03.png": {
+    "subject": "Waddle Wing",
+    "url": "https://mario.wiki.gallery/images/e/ef/WaddleWingMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "db85c68089574713b47290786fe116008f5929e4a38c54ccc18ab6f4d570c14a"
+  },
+  "PTWG_04.png": {
+    "subject": "Peach Parasol",
+    "url": "https://mario.wiki.gallery/images/6/6e/PeachParasolGliderMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "d78f0fa6c42873e6e821a3a331bab06cfe636257592444099964dd4c1eeef04a"
+  },
+  "PTWG_05.png": {
+    "subject": "Parachute",
+    "url": "https://mario.wiki.gallery/images/d/dd/ParachuteGliderMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "43b80b1377473b7d14da069fafd0aa62e1fee233e09bc70e8baa8565c001a43a"
+  },
+  "PTWG_06.png": {
+    "subject": "Parafoil",
+    "url": "https://mario.wiki.gallery/images/c/c4/ParafoilGliderMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "3c7cfd3f0367f18b1182195dea2bf8691eb787b4148e97d6eec8c69795b2322b"
+  },
+  "PTWG_07.png": {
+    "subject": "Flower Glider",
+    "url": "https://mario.wiki.gallery/images/b/b3/FlowerGliderMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "98bc75c2bbea67a486e03c523c2be275b744440bcb681fea303d699176dfb9f3"
+  },
+  "PTWG_08.png": {
+    "subject": "Bowser Kite",
+    "url": "https://mario.wiki.gallery/images/f/f7/BowserKiteMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "d578e48a4f5bcf981beffe2e4493611d5eda9949ba4099354cab3b7e96643c2f"
+  },
+  "PTWG_09.png": {
+    "subject": "Plane Glider",
+    "url": "https://mario.wiki.gallery/images/c/ca/PlaneGliderMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "cb46bbcd8e8fdb1b435561b7f6516bc18b73ea8b5d578d28d6b2c97c7359ec91"
+  },
+  "PTWG_10.png": {
+    "subject": "MKTV Parafoil",
+    "url": "https://mario.wiki.gallery/images/9/96/MKTVParafoilGliderMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "a9a95197b9f5c1c2ed5dd500ccae91730270e61ffde2558a71ed9024a797c137"
+  },
+  "PTWG_11.png": {
+    "subject": "Gold Glider",
+    "url": "https://mario.wiki.gallery/images/1/18/GoldGliderMK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "e8656580c051379dd756c1e558f79957edb716f45029572688b4615c244029ca"
+  },
+  "PTWG_12.png": {
+    "subject": "Hylian Kite",
+    "url": "https://mario.wiki.gallery/images/9/9c/MK8-HylianKite.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "9d426ab6b3ca67a53b6a187379d665c309e58d9527b7f9004c11e14c1a4566df"
+  },
+  "PTWG_13.png": {
+    "subject": "Paper Glider",
+    "url": "https://mario.wiki.gallery/images/0/0e/PaperGliderIcon-MK8.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "b94d522bfb4acd4ec398146b768af9dcd613bbe3485192e570f3aa2eb395ee73"
+  },
+  "PTWG_14.png": {
+    "subject": "Paraglider",
+    "url": "https://mario.wiki.gallery/images/3/39/MK8D_Paraglider.png",
+    "page": "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics",
+    "sha256": "28bfb5018eb538d024466e9bb0e49073ca0c184f12f7a9eb8afe80e538b745ee"
+  }
+}

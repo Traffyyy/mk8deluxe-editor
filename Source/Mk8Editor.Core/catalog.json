@@ -1,0 +1,919 @@
+[
+  {
+    "Section": "PTBD",
+    "Index": 0,
+    "Name": "Standard Kart",
+    "Image": "PTBD_00.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTBD",
+    "Index": 1,
+    "Name": "Pipe Frame",
+    "Image": "PTBD_01.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTBD",
+    "Index": 2,
+    "Name": "Mach 8",
+    "Image": "PTBD_02.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTBD",
+    "Index": 3,
+    "Name": "Steel Driver",
+    "Image": "PTBD_03.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTBD",
+    "Index": 4,
+    "Name": "Cat Cruiser",
+    "Image": "PTBD_04.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTBD",
+    "Index": 5,
+    "Name": "Circuit Special",
+    "Image": "PTBD_05.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTBD",
+    "Index": 6,
+    "Name": "Tri-Speeder",
+    "Image": "PTBD_06.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTBD",
+    "Index": 7,
+    "Name": "Badwagon",
+    "Image": "PTBD_07.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTBD",
+    "Index": 8,
+    "Name": "Prancer",
+    "Image": "PTBD_08.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTBD",
+    "Index": 9,
+    "Name": "Biddybuggy",
+    "Image": "PTBD_09.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTBD",
+    "Index": 10,
+    "Name": "Landship",
+    "Image": "PTBD_10.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTBD",
+    "Index": 11,
+    "Name": "Sneeker",
+    "Image": "PTBD_11.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTBD",
+    "Index": 12,
+    "Name": "Sports Coupe",
+    "Image": "PTBD_12.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTBD",
+    "Index": 13,
+    "Name": "Gold Standard",
+    "Image": "PTBD_13.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTBD",
+    "Index": 14,
+    "Name": "Standard Bike",
+    "Image": "PTBD_14.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTBD",
+    "Index": 15,
+    "Name": "Comet",
+    "Image": "PTBD_15.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTBD",
+    "Index": 16,
+    "Name": "Sport Bike",
+    "Image": "PTBD_16.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTBD",
+    "Index": 17,
+    "Name": "The Duke",
+    "Image": "PTBD_17.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTBD",
+    "Index": 18,
+    "Name": "Flame Rider",
+    "Image": "PTBD_18.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTBD",
+    "Index": 19,
+    "Name": "Varmint",
+    "Image": "PTBD_19.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTBD",
+    "Index": 20,
+    "Name": "Mr. Scooty",
+    "Image": "PTBD_20.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTBD",
+    "Index": 21,
+    "Name": "Jet Bike",
+    "Image": "PTBD_21.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTBD",
+    "Index": 22,
+    "Name": "Yoshi Bike",
+    "Image": "PTBD_22.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTBD",
+    "Index": 23,
+    "Name": "Standard ATV",
+    "Image": "PTBD_23.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTBD",
+    "Index": 24,
+    "Name": "Wild Wiggler",
+    "Image": "PTBD_24.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTBD",
+    "Index": 25,
+    "Name": "Teddy Buggy",
+    "Image": "PTBD_25.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTBD",
+    "Index": 26,
+    "Name": "GLA",
+    "Image": "PTBD_26.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTBD",
+    "Index": 27,
+    "Name": "W 25 Silver Arrow",
+    "Image": "PTBD_27.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTBD",
+    "Index": 28,
+    "Name": "300 SL Roadster",
+    "Image": "PTBD_28.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTBD",
+    "Index": 29,
+    "Name": "Blue Falcon",
+    "Image": "PTBD_29.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTBD",
+    "Index": 30,
+    "Name": "Tanooki Kart",
+    "Image": "PTBD_30.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTBD",
+    "Index": 31,
+    "Name": "B Dasher",
+    "Image": "PTBD_31.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTBD",
+    "Index": 32,
+    "Name": "Master Cycle",
+    "Image": "PTBD_32.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTBD",
+    "Index": 33,
+    "Name": "Streetle",
+    "Image": "PTBD_33.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTBD",
+    "Index": 34,
+    "Name": "P-Wing",
+    "Image": "PTBD_34.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTBD",
+    "Index": 35,
+    "Name": "City Tripper",
+    "Image": "PTBD_35.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTBD",
+    "Index": 36,
+    "Name": "Bone Rattler",
+    "Image": "PTBD_36.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTBD",
+    "Index": 37,
+    "Name": "Koopa Clown",
+    "Image": "PTBD_37.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTBD",
+    "Index": 38,
+    "Name": "Splat Buggy",
+    "Image": "PTBD_38.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTBD",
+    "Index": 39,
+    "Name": "Inkstriker",
+    "Image": "PTBD_39.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTBD",
+    "Index": 40,
+    "Name": "Master Cycle Zero",
+    "Image": "PTBD_40.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 0,
+    "Name": "Mario",
+    "Image": "PTDV_00.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 1,
+    "Name": "Luigi",
+    "Image": "PTDV_01.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 2,
+    "Name": "Peach",
+    "Image": "PTDV_02.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 3,
+    "Name": "Daisy",
+    "Image": "PTDV_03.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 4,
+    "Name": "Yoshi",
+    "Image": "PTDV_04.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 5,
+    "Name": "Toad",
+    "Image": "PTDV_05.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 6,
+    "Name": "Toadette",
+    "Image": "PTDV_06.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 7,
+    "Name": "Koopa Troopa",
+    "Image": "PTDV_07.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 8,
+    "Name": "Bowser",
+    "Image": "PTDV_08.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 9,
+    "Name": "Donkey Kong",
+    "Image": "PTDV_09.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 10,
+    "Name": "Wario",
+    "Image": "PTDV_10.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 11,
+    "Name": "Waluigi",
+    "Image": "PTDV_11.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 12,
+    "Name": "Rosalina",
+    "Image": "PTDV_12.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 13,
+    "Name": "Metal Mario",
+    "Image": "PTDV_13.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 14,
+    "Name": "Pink Gold Peach",
+    "Image": "PTDV_14.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 15,
+    "Name": "Lakitu",
+    "Image": "PTDV_15.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 16,
+    "Name": "Shy Guy",
+    "Image": "PTDV_16.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 17,
+    "Name": "Baby Mario",
+    "Image": "PTDV_17.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 18,
+    "Name": "Baby Luigi",
+    "Image": "PTDV_18.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 19,
+    "Name": "Baby Peach",
+    "Image": "PTDV_19.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 20,
+    "Name": "Baby Daisy",
+    "Image": "PTDV_20.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 21,
+    "Name": "Baby Rosalina",
+    "Image": "PTDV_21.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 22,
+    "Name": "Larry",
+    "Image": "PTDV_22.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 23,
+    "Name": "Lemmy",
+    "Image": "PTDV_23.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 24,
+    "Name": "Wendy",
+    "Image": "PTDV_24.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 25,
+    "Name": "Ludwig",
+    "Image": "PTDV_25.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 26,
+    "Name": "Iggy",
+    "Image": "PTDV_26.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 27,
+    "Name": "Roy",
+    "Image": "PTDV_27.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 28,
+    "Name": "Morton",
+    "Image": "PTDV_28.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 29,
+    "Name": "Mii (medium)",
+    "Image": "PTDV_29.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 30,
+    "Name": "Tanooki Mario",
+    "Image": "PTDV_30.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 31,
+    "Name": "Link",
+    "Image": "PTDV_31.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 32,
+    "Name": "Villager (male)",
+    "Image": "PTDV_32.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 33,
+    "Name": "Isabelle",
+    "Image": "PTDV_33.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 34,
+    "Name": "Cat Peach",
+    "Image": "PTDV_34.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 35,
+    "Name": "Dry Bowser",
+    "Image": "PTDV_35.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 36,
+    "Name": "Villager (female)",
+    "Image": "PTDV_36.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 37,
+    "Name": "Gold Mario",
+    "Image": "PTDV_37.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 38,
+    "Name": "Dry Bones",
+    "Image": "PTDV_38.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 39,
+    "Name": "Bowser Jr.",
+    "Image": "PTDV_39.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 40,
+    "Name": "King Boo",
+    "Image": "PTDV_40.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 41,
+    "Name": "Inkling Girl",
+    "Image": "PTDV_41.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 42,
+    "Name": "Inkling Boy",
+    "Image": "PTDV_42.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 43,
+    "Name": "Link (Breath of the Wild)",
+    "Image": "PTDV_43.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 44,
+    "Name": "Birdo",
+    "Image": "PTDV_44.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 45,
+    "Name": "Kamek",
+    "Image": "PTDV_45.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 46,
+    "Name": "Petey Piranha",
+    "Image": "PTDV_46.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 47,
+    "Name": "Wiggler",
+    "Image": "PTDV_47.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 48,
+    "Name": "Diddy Kong",
+    "Image": "PTDV_48.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 49,
+    "Name": "Funky Kong",
+    "Image": "PTDV_49.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTDV",
+    "Index": 50,
+    "Name": "Peachette",
+    "Image": "PTDV_50.png",
+    "Note": "Peachette/Pauline order reconciled using IDs and reference files."
+  },
+  {
+    "Section": "PTDV",
+    "Index": 51,
+    "Name": "Pauline",
+    "Image": "PTDV_51.png",
+    "Note": "Peachette/Pauline order reconciled using IDs and reference files."
+  },
+  {
+    "Section": "PTDV",
+    "Index": 52,
+    "Name": "Mii (DLC costumes)",
+    "Image": "PTDV_52.png",
+    "Note": "Second Mii ID for DLC costumes; absent from the spreadsheet."
+  },
+  {
+    "Section": "PTTR",
+    "Index": 0,
+    "Name": "Standard",
+    "Image": "PTTR_00.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTTR",
+    "Index": 1,
+    "Name": "Monster",
+    "Image": "PTTR_01.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTTR",
+    "Index": 2,
+    "Name": "Roller",
+    "Image": "PTTR_02.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTTR",
+    "Index": 3,
+    "Name": "Slim",
+    "Image": "PTTR_03.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTTR",
+    "Index": 4,
+    "Name": "Slick",
+    "Image": "PTTR_04.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTTR",
+    "Index": 5,
+    "Name": "Metal",
+    "Image": "PTTR_05.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTTR",
+    "Index": 6,
+    "Name": "Button",
+    "Image": "PTTR_06.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTTR",
+    "Index": 7,
+    "Name": "Off-Road",
+    "Image": "PTTR_07.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTTR",
+    "Index": 8,
+    "Name": "Sponge",
+    "Image": "PTTR_08.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTTR",
+    "Index": 9,
+    "Name": "Wood",
+    "Image": "PTTR_09.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTTR",
+    "Index": 10,
+    "Name": "Cushion",
+    "Image": "PTTR_10.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTTR",
+    "Index": 11,
+    "Name": "Blue Standard",
+    "Image": "PTTR_11.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTTR",
+    "Index": 12,
+    "Name": "Hot Monster",
+    "Image": "PTTR_12.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTTR",
+    "Index": 13,
+    "Name": "Azure Roller",
+    "Image": "PTTR_13.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTTR",
+    "Index": 14,
+    "Name": "Crimson Slim",
+    "Image": "PTTR_14.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTTR",
+    "Index": 15,
+    "Name": "Cyber Slick",
+    "Image": "PTTR_15.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTTR",
+    "Index": 16,
+    "Name": "Retro Off-Road",
+    "Image": "PTTR_16.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTTR",
+    "Index": 17,
+    "Name": "Gold Tires",
+    "Image": "PTTR_17.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTTR",
+    "Index": 18,
+    "Name": "GLA Tires",
+    "Image": "PTTR_18.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTTR",
+    "Index": 19,
+    "Name": "Triforce Tires",
+    "Image": "PTTR_19.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTTR",
+    "Index": 20,
+    "Name": "Leaf Tires",
+    "Image": "PTTR_20.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTTR",
+    "Index": 21,
+    "Name": "Ancient Tires",
+    "Image": "PTTR_21.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTWG",
+    "Index": 0,
+    "Name": "Super Glider",
+    "Image": "PTWG_00.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTWG",
+    "Index": 1,
+    "Name": "Cloud Glider",
+    "Image": "PTWG_01.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTWG",
+    "Index": 2,
+    "Name": "Wario Wing",
+    "Image": "PTWG_02.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTWG",
+    "Index": 3,
+    "Name": "Waddle Wing",
+    "Image": "PTWG_03.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTWG",
+    "Index": 4,
+    "Name": "Peach Parasol",
+    "Image": "PTWG_04.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTWG",
+    "Index": 5,
+    "Name": "Parachute",
+    "Image": "PTWG_05.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTWG",
+    "Index": 6,
+    "Name": "Parafoil",
+    "Image": "PTWG_06.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTWG",
+    "Index": 7,
+    "Name": "Flower Glider",
+    "Image": "PTWG_07.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTWG",
+    "Index": 8,
+    "Name": "Bowser Kite",
+    "Image": "PTWG_08.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTWG",
+    "Index": 9,
+    "Name": "Plane Glider",
+    "Image": "PTWG_09.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTWG",
+    "Index": 10,
+    "Name": "MKTV Parafoil",
+    "Image": "PTWG_10.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTWG",
+    "Index": 11,
+    "Name": "Gold Glider",
+    "Image": "PTWG_11.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTWG",
+    "Index": 12,
+    "Name": "Hylian Kite",
+    "Image": "PTWG_12.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTWG",
+    "Index": 13,
+    "Name": "Paper Glider",
+    "Image": "PTWG_13.png",
+    "Note": ""
+  },
+  {
+    "Section": "PTWG",
+    "Index": 14,
+    "Name": "Paraglider",
+    "Image": "PTWG_14.png",
+    "Note": ""
+  }
+]
