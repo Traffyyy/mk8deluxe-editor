@@ -35,3 +35,11 @@ No clean-machine installation, gameplay test, Developer ID signing, notarization
 or broad game-update compatibility is claimed. Windows executables are unsigned.
 See [BUILDING.md](BUILDING.md) for commands and [platform support](docs/PLATFORM-SUPPORT.md)
 for target-specific limits.
+
+## Public build verification (2026-11-11)
+
+GitHub Actions run 43074026091 built and passed core and headless UI checks on Linux x64. The extracted Linux launcher also passed. This is automated native testing, not an interactive user acceptance test or an audible speaker test.
+
+The original Windows WPF build passed all 52 core checks on the GitHub runner, but its UI verification failed at bundled WAV playback. Its previous local Windows verification remains recorded above; the hosted-runner audio failure is unresolved. The published original Windows ZIP is the unchanged locally verified artifact.
+
+macOS core and headless UI checks passed on Apple Silicon; packaging initially failed signing nested assemblies. A packaging fix is being verified in run 43074561667. Do not infer completed macOS package verification from the source build alone.

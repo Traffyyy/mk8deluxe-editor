@@ -217,7 +217,11 @@ def package(publish, output, rid, version="1.0.0", icon=None, codesign_adhoc=Fal
             subprocess.run(["codesign", "--force", "--deep", "--sign", "-", str(bundle)], check=True)
             subprocess.run(["codesign", "--verify", "--deep", "--strict", str(bundle)], check=True)
         archive = temporary / destination.name
-        (write_tar if rid.startswith("linux-") else write_zip)(staging, archive, executables)
+        if codesign_adhoc:
+            # ditto preserves signatures stored in extended attributes on managed DLLs.
+            subprocess.run(["ditto", "-c", "-k", "--sequesterRsrc", str(staging), str(archive)], check=True)
+        else:
+            (write_tar if rid.startswith("linux-") else write_zip)(staging, archive, executables)
         os.replace(archive, destination)
     with destination.open("rb") as archive_file:
         digest = hashlib.file_digest(archive_file, "sha256").hexdigest()
@@ -245,4 +249,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
