@@ -214,7 +214,7 @@ def package(publish, output, rid, version="1.0.0", icon=None, codesign_adhoc=Fal
             for path in sorted(payload.rglob("*")):
                 if path.is_file() and path.suffix == ".dylib":
                     subprocess.run(["codesign", "--force", "--sign", "-", str(path)], check=True)
-            subprocess.run(["codesign", "--force", "--sign", "-", str(bundle)], check=True)
+            subprocess.run(["codesign", "--force", "--deep", "--sign", "-", str(bundle)], check=True)
             subprocess.run(["codesign", "--verify", "--deep", "--strict", str(bundle)], check=True)
         archive = temporary / destination.name
         (write_tar if rid.startswith("linux-") else write_zip)(staging, archive, executables)
@@ -245,3 +245,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
