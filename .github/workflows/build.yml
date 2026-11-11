@@ -1,0 +1,130 @@
+name: Build and package
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  desktop:
+    name: Desktop / ${{ matrix.rid }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: macos-15
+            rid: osx-arm64
+            sign: --codesign-adhoc
+          - os: macos-15-intel
+            rid: osx-x64
+            sign: --codesign-adhoc
+          - os: ubuntu-24.04
+            rid: linux-x64
+            sign: ''
+          - os: windows-2022
+            rid: win-x64
+            sign: ''
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 25
+    env:
+      DOTNET_NOLOGO: 'true'
+      DOTNET_CLI_TELEMETRY_OPTOUT: 'true'
+      SDL_AUDIODRIVER: dummy
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.403
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Linux desktop dependencies
+        if: runner.os == 'Linux'
+        run: sudo apt-get update && sudo apt-get install -y libx11-6 libice6 libsm6 libfontconfig1
+      - name: Check packaging contract using synthetic fixtures
+        run: python -m unittest discover -s scripts -p test_package.py -v
+      - name: Run native core regression tests
+        run: dotnet run --project CrossPlatform/Mk8Editor.Tests/Mk8Editor.Tests.csproj --configuration Release
+      - name: Generate synthetic UI fixture
+        run: dotnet run --project CrossPlatform/Mk8Editor.Tests/Mk8Editor.Tests.csproj --configuration Release --no-build -- --write-fixture fixture.bin
+      - name: Publish self-contained desktop
+        run: >-
+          dotnet publish CrossPlatform/Mk8Editor.Desktop/Mk8Editor.Desktop.csproj
+          --configuration Release --runtime ${{ matrix.rid }} --self-contained true
+          -p:PublishSingleFile=false -p:PublishTrimmed=false
+          --output artifacts/publish/${{ matrix.rid }}
+      - name: Verify published UI with silent audio
+        shell: bash
+        run: |
+          executable="artifacts/publish/${{ matrix.rid }}/Mk8Editor.Desktop"
+          if [[ "${{ runner.os }}" == "Windows" ]]; then executable="$executable.exe"; fi
+          "$executable" --verify fixture.bin "artifacts/verification/${{ matrix.rid }}"
+      - name: Package desktop and checksum
+        run: >-
+          python scripts/package.py --publish artifacts/publish/${{ matrix.rid }}
+          --output artifacts/packages --rid ${{ matrix.rid }} --version 1.0.0 ${{ matrix.sign }}
+      - name: Verify extracted Mac bundle and signature
+        if: runner.os == 'macOS'
+        shell: bash
+        run: |
+          mkdir -p artifacts/extracted
+          ditto -x -k "artifacts/packages/mk8deluxe-editor-1.0.0-${{ matrix.rid }}.zip" artifacts/extracted
+          bundle="artifacts/extracted/mk8deluxe-editor-1.0.0-${{ matrix.rid }}/mk8deluxe editor.app"
+          test -x "$bundle/Contents/MacOS/Mk8Editor.Desktop"
+          codesign --verify --deep --strict "$bundle"
+          "$bundle/Contents/MacOS/Mk8Editor.Desktop" --verify fixture.bin "artifacts/verification/${{ matrix.rid }}-packaged"
+      - name: Verify extracted Linux launcher
+        if: runner.os == 'Linux'
+        shell: bash
+        run: |
+          mkdir -p artifacts/extracted
+          tar -xzf artifacts/packages/mk8deluxe-editor-1.0.0-linux-x64.tar.gz -C artifacts/extracted
+          artifacts/extracted/mk8deluxe-editor-1.0.0-linux-x64/mk8deluxe-editor --verify fixture.bin artifacts/verification/linux-x64-packaged
+      - uses: actions/upload-artifact@v4
+        with:
+          name: mk8deluxe-editor-1.0.0-${{ matrix.rid }}
+          path: artifacts/packages/*
+          if-no-files-found: error
+          retention-days: 14
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: verification-${{ matrix.rid }}
+          path: artifacts/verification/
+          if-no-files-found: warn
+          retention-days: 14
+
+  windows-original:
+    name: Original Windows application
+    runs-on: windows-2022
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.403
+      - name: Build original application
+        shell: powershell
+        run: ./Source/build.ps1
+      - name: Generate synthetic fixture and run original checks
+        shell: powershell
+        run: |
+          dotnet run --project CrossPlatform/Mk8Editor.Tests/Mk8Editor.Tests.csproj --configuration Release -- --write-fixture fixture.bin
+          if ($LASTEXITCODE -ne 0) { throw 'Fixture generation failed' }
+          & .\App\Mk8Editor.Tests.exe .\fixture.bin
+          if ($LASTEXITCODE -ne 0) { throw 'Original core checks failed' }
+          $process = Start-Process -FilePath '.\App\mk8deluxe editor.exe' -ArgumentList '--verify fixture.bin Verification' -Wait -PassThru
+          if ($process.ExitCode -ne 0) { throw 'Original WPF checks failed' }
+          if (Test-Path -LiteralPath '.\Verification\failure.txt') { throw (Get-Content '.\Verification\failure.txt' -Raw) }
+          if (-not (Test-Path -LiteralPath '.\Verification\ui-verification.txt')) { throw 'Missing WPF verification log' }
+          Get-Content '.\Verification\ui-verification.txt'
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: verification-windows-original
+          path: Verification/
+          if-no-files-found: warn
+          retention-days: 14
