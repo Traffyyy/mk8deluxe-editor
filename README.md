@@ -1,12 +1,16 @@
 # mk8deluxe editor
 
 An unofficial desktop editor for the supported Mario Kart 8 Deluxe `Performance.bin`
-layout, by **Traffy** ([Traffyyy](https://github.com/Traffyyy)). First release: **1.0.0**.
+layout, by **Traffy** ([Traffyyy](https://github.com/Traffyyy)). First public build: **1.0.0 — beta**. This is a prerelease, not a fully validated stable release.
 
 The original Windows WPF application is preserved in `Source/`. A separate Avalonia
 application in `CrossPlatform/` provides Windows x64, macOS Apple Silicon/Intel and
-Linux x64 build targets. Native macOS/Linux validation is pending: see
+Linux x64 build targets. Automated checks have passed on Linux and macOS; interactive use and audible playback still need broader testing. See
 [platform support](docs/PLATFORM-SUPPORT.md) and [verification](VERIFICATION.md).
+
+**Tested game version: Mario Kart 8 Deluxe 3.0.5** (reported by Traffy). Other game versions are unverified. File-layout validation is not game-version detection.
+
+**Start here: [step-by-step user guide](docs/USER-GUIDE.md).** Includes editing, copying, batch changes, Hex, saving and platform-specific shortcuts.
 
 ## Features
 
@@ -42,7 +46,7 @@ checksums detect changed downloads; they do not authenticate the publisher.
 No game binary, ROM, encryption key, emulator or mod is included. Supply your own
 supported `Performance.bin`. The editor does not need a network connection.
 
-## Use
+## Use (original Windows shortcuts)
 
 Open a file with the folder button or Ctrl+O, select a category, then edit a numeric
 cell. Ctrl+Z undoes an edit. Reset restores the opened values and clears Undo history.
@@ -96,3 +100,4 @@ These are actual off-screen WPF renders. They do not demonstrate native macOS/Li
 ![Statistics in dark mode](docs/images/statistics-dark.png)
 
 ![Linked Hex comparison](docs/images/hex-comparison-dark.png)
+
