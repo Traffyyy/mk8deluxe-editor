@@ -123,12 +123,18 @@ public sealed class StatisticsTable : UserControl
                     else if (point.Properties.IsLeftButtonPressed)
                     {
                         state.Select(offset, additive, range);
-                        dragging = true; additiveDrag = additive; e.Pointer.Capture(values);
+                        dragging = e.ClickCount != 2; additiveDrag = additive;
+                        if (dragging) e.Pointer.Capture(cell);
                     }
                     keyboardTarget = offset; cell.Focus(); RefreshSelection(); SelectionChanged?.Invoke();
                     e.Handled = point.Properties.IsLeftButtonPressed;
+                    if (point.Properties.IsLeftButtonPressed && e.ClickCount == 2)
+                    {
+                        e.Pointer.Capture(null);
+                        EditRequested?.Invoke();
+                    }
                 };
-                cell.DoubleTapped += (_, e) => { EditRequested?.Invoke(); e.Handled = true; };
+
                 if (CreateContextMenu != null) cell.ContextMenu = CreateContextMenu();
             }
         }
@@ -173,5 +179,6 @@ public sealed class StatisticsTable : UserControl
         RefreshSelection(); RevealActive(); SelectionChanged?.Invoke();
     }
 }
+
 
 

@@ -7,6 +7,8 @@ namespace Mk8Editor.Desktop;
 
 public sealed class EditorApp : Application
 {
+    public EditorApp() => Name = "mk8deluxe editor";
+
     public override void Initialize()
     {
         RequestedThemeVariant = ThemeVariant.Light;
@@ -25,3 +27,4 @@ public sealed class EditorApp : Application
         base.OnFrameworkInitializationCompleted();
     }
 }
+

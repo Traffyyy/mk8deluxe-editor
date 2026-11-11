@@ -26,6 +26,21 @@ internal static class UiChecks
         Check(window.State.Session == null && window.Table.CellCount == 0, "Empty editor opens without game data");
         window.LoadForVerification(args[0]); Dispatcher.UIThread.RunJobs();
         Check(window.State.Records.Count == 131, "All 131 catalog items loaded");
+        Check(Application.Current!.Name == "mk8deluxe editor", "Native application name is configured");
+        var probeTable = new StatisticsTable(window.State);
+        int requests = 0;
+        probeTable.EditRequested += () => requests++;
+        var probe = new Window { Width = 1000, Height = 600, Content = probeTable };
+        probeTable.Rebuild(); probe.Show(); Dispatcher.UIThread.RunJobs();
+        var target = probeTable.Cells.First().Value;
+        var click = target.TranslatePoint(new Point(target.Bounds.Width / 2, target.Bounds.Height / 2), probe)!.Value;
+        probe.MouseDown(click, Avalonia.Input.MouseButton.Left);
+        probe.MouseUp(click, Avalonia.Input.MouseButton.Left);
+        Check(requests == 0, "Single click selects without editing");
+        probe.MouseDown(click, Avalonia.Input.MouseButton.Left);
+        probe.MouseUp(click, Avalonia.Input.MouseButton.Left);
+        Check(requests == 1, "Double click requests exactly one edit after pointer capture");
+        probe.Close();
         int[] expectedCounts = [41, 53, 15, 22];
         for (int category = 0; category < 4; category++)
         {
