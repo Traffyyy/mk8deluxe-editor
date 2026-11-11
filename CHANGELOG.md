@@ -5,7 +5,7 @@
 Prepared on 2026-11-07. Public version/tag: **1.0.0 / v1.0.0**; assembly/file version:
 **1.0.0.0**. Earlier numbered folders were internal iterations, not public releases.
 
-- Original Windows WPF application preserved, with publisher Traffy and an English UI.
+- Original Windows WPF application preserved with an English UI.
 - Avalonia desktop implementation for Windows x64, macOS Apple Silicon/Intel and Linux x64.
 - Four categories, 131 item records and 14 raw statistics per record, with original artwork.
 - Name search, light/dark themes and the original recording with audio controls.

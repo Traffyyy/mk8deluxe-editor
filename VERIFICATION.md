@@ -16,7 +16,7 @@ The reference fixture hash before/after was
 `602240ce35150e1bd0eda2c117b69b9dd13aa96b30dbe5c5148035fc9b817e0b`.
 The supplied development files and 131 artwork hashes were previously verified
 against the preparation snapshot/provenance manifest. The original application
-logic remains preserved; publication metadata identifies Traffy / version 1.0.0.0.
+logic remains preserved; the Windows file version is 1.0.0.0.
 
 ## Cross-platform release work
 

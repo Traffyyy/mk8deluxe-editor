@@ -89,7 +89,7 @@ The final character entry is Mii (DLC costumes), using a representative image.
 
 ## Source and licensing
 
-Original project code is [MIT licensed](LICENSE), copyright 2026 Traffy.
+I release the original project code under the [MIT license](LICENSE).
 The MIT grant excludes Nintendo artwork, the icon derived from that artwork, the
 bundled recording and other third-party components. I have included the existing media as-is; this does not establish permission from their
 rights holders. See [license scope](LICENSE-STATUS.md) and

@@ -1,6 +1,6 @@
 # License scope
 
-Author/publisher: **Traffy**, GitHub **Traffyyy**.
+
 
 I license the original project code and documentation under the MIT license; see [LICENSE](LICENSE).
 
