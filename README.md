@@ -1,9 +1,8 @@
 # mk8deluxe editor
 
-> **Updated development builds:** the disk button and Ctrl/Command+S now save to the opened file. Ctrl/Command+Shift+S (or Save As in the portable actions menu) chooses a destination and asks before replacing an existing file. Each overwrite keeps a uniquely named `.bak` file beside the destination. External changes to the opened file are rejected: reopen it or save under a different name. The original Hex pane remains the snapshot from when you opened the file. Older 1.0.0 release downloads still use copy-only saving; the historical instructions below describe those downloads.
 
 
-I created **mk8deluxe editor** to edit statistics in Mario Kart 8 Deluxe `Performance.bin` files. First public build: **1.0.0 — beta**. This is a prerelease, not a fully validated stable release.
+I created **mk8deluxe editor** to edit statistics in Mario Kart 8 Deluxe `Performance.bin` files. Current download: **Beta 2**. This is a prerelease, not a fully validated stable release.
 
 The original Windows WPF application is preserved in `Source/`. A separate Avalonia
 application in `CrossPlatform/` provides Windows x64, macOS Apple Silicon/Intel and
@@ -23,7 +22,7 @@ I tested the editor with **Mario Kart 8 Deluxe 3.0.5**. Other game versions are 
 - Linked Original/Edited Hex views, bookmarks, tooltips and changed-byte outlines.
 - Two-way navigation between statistics and their bytes.
 - Light/dark themes and the original bundled music with playback/volume controls.
-- Save to a new file; the opened file and existing destinations are not overwritten.
+- Save to the opened file, or use Save As; overwrites retain a recoverable backup.
 
 ## Required game file
 
@@ -39,7 +38,6 @@ Keep the entire extracted folder together, including `Audio/reference.wav`.
 
 | Package | Start |
 | --- | --- |
-| Original Windows x64 (WPF) | `mk8deluxe editor.exe`; requires .NET Framework 4.8 |
 | Cross-platform Windows x64 | `Mk8Editor.Desktop.exe`; .NET runtime included |
 | macOS Apple Silicon (`osx-arm64`) | `mk8deluxe editor.app` |
 | macOS Intel (`osx-x64`) | `mk8deluxe editor.app` |
@@ -54,18 +52,18 @@ checksums detect changed downloads; they do not authenticate the publisher.
 No game binary, ROM, encryption key, emulator or mod is included. Supply your own
 supported `Performance.bin`. The editor does not need a network connection.
 
-## Use (original Windows shortcuts)
+## Use
 
 Open a file with the folder button or Ctrl+O, select a category, then edit a numeric
 cell. Ctrl+Z undoes an edit. Reset restores the opened values and clears Undo history.
-Save a new copy with the disk button or Ctrl+Shift+S.
+Save to the opened file with the disk button or Ctrl/Command+S. Use Ctrl/Command+Shift+S for Save As.
 
 Values are raw unsigned 32-bit integers (0–4294967295), not the bars in the game menu.
 An accepted value is not a promise of meaningful or stable gameplay behavior.
 
-Ctrl+Shift+C copies a row's 14 statistics. Select destination cells and use
-Ctrl+Shift+V to paste into their rows. Ctrl+click or Shift+click selects numeric
-cells; Ctrl+Enter sets selected fields to one value. The actions menu provides
+Ctrl/Command+C copies a row's 14 statistics. Select destination cells and use
+Ctrl/Command+V to paste into their rows. Ctrl+click or Shift+click selects numeric
+cells; F2 opens a dialog to set selected fields to one value. The actions menu provides
 these commands too. The shortcuts are expressed as Ctrl throughout this README;
 use the commands shown by the application on your platform.
 
@@ -98,9 +96,9 @@ rights holders. See [license scope](LICENSE-STATUS.md) and
 See [building](BUILDING.md), [changelog](CHANGELOG.md) and
 [contributing](CONTRIBUTING.md). This project is not affiliated with or endorsed by Nintendo.
 
-## Original Windows interface previews
+## Earlier Windows interface previews
 
-These are actual off-screen WPF renders. They do not demonstrate native macOS/Linux behavior.
+These show the earlier WPF interface. Current downloads use the portable interface; these are historical previews.
 
 ![Statistics in light mode](docs/images/statistics-light.png)
 

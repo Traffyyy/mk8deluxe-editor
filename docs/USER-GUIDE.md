@@ -1,6 +1,5 @@
 # User guide — public beta
 
-> **Updated development builds:** the disk button and Ctrl/Command+S now save to the opened file. Ctrl/Command+Shift+S (or Save As in the portable actions menu) chooses a destination and asks before replacing an existing file. Each overwrite keeps a uniquely named `.bak` file beside the destination. External changes to the opened file are rejected: reopen it or save under a different name. The original Hex pane remains the snapshot from when you opened the file. Older 1.0.0 release downloads still use copy-only saving; the historical instructions below describe those downloads.
 
 
 I tested the editor with **Mario Kart 8 Deluxe 3.0.5**. This does not certify every edit, item mapping or operating system. Other game versions are unverified. The parser checks the binary layout; it does not independently detect the game's version.
@@ -13,12 +12,12 @@ The editor reads this extracted file; it does not extract RomFS or open a game R
 
 ## First edit
 
-1. Download your platform's archive from [the release](https://github.com/Traffyyy/mk8deluxe-editor/releases/tag/v1.0.0), extract the whole folder, and keep the Audio folder beside the executable. Keep a backup of your own Performance.bin.
+1. Download your platform's archive from [the release](https://github.com/Traffyyy/mk8deluxe-editor/releases/tag/v1.0.0-beta.2), extract the whole folder, and keep the Audio folder beside the executable. Keep a backup of your own Performance.bin.
 2. Start the application. Click the folder icon and choose your Performance.bin. No game files are bundled.
 3. Select Karts, Characters, Gliders or Wheels. Search for an item by name. The numbers come from the opened file, including any previous modifications.
 4. Double-click a statistic or select it and press F2. Enter a whole number. The portable application uses an edit dialog. Green/pink cells indicate increases/decreases relative to the file you opened.
 5. Use Undo to reverse an operation. A batch operation is undone as one operation. Reset restores the opened values and clears Undo history.
-6. Click the disk icon and choose a **new filename**. The editor refuses to overwrite the opened file or an existing destination. Reopen the exported copy to inspect it before using it in your mod setup. Exporting does not install a mod or modify the active game folder.
+6. Click the disk icon or press Ctrl/Command+S to save to the opened file. Use Ctrl/Command+Shift+S or **Save As** in the actions menu to choose another destination. Replacing an existing file requires confirmation in Save As. Each overwrite keeps a uniquely named `.bak` file beside the destination. If the opened file changed externally, reopen it or choose a new name. Saving does not install a mod automatically; saving a file inside an active mod folder updates that file.
 
 ## Copy, paste and batch edits
 
